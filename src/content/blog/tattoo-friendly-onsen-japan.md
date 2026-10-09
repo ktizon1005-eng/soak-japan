@@ -2,7 +2,7 @@
 title: 'Tattoo-Friendly Onsen in Japan: Where You Can Bathe (Checked October 2026)'
 description: 'Which onsen and sento in Tokyo, Hakone, Osaka and Kinosaki let you in with tattoos, which need cover stickers, and which still say no. Every rule checked on the official website.'
 pubDate: 'Oct 09 2026'
-draft: true
+draft: false
 ---
 
 **Quick answer:** you can bathe in Japan with tattoos, but the rules depend on the place. Some baths let you in as you are, some let you in only if you cover the tattoo with their own stickers, and some still refuse anyone with ink. Below are the rules for well-known places, taken from each facility's official website on **October 9, 2026**.
