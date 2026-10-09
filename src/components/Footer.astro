@@ -1,0 +1,39 @@
+---
+import { AUTHOR, SITE_TITLE, url } from '../consts';
+const today = new Date();
+---
+
+<footer>
+	<p class="disclosure">
+		Some links on this site are affiliate links. If you book through them, we may earn a small
+		commission at no extra cost to you. <a href={url('/disclosure/')}>Learn more</a>.
+	</p>
+	<nav>
+		<a href={url('/about/')}>About</a>
+		<a href={url('/disclosure/')}>Affiliate Disclosure</a>
+		<a href={url('/privacy/')}>Privacy Policy</a>
+		<a href={url('/contact/')}>Contact</a>
+	</nav>
+	<p>&copy; {today.getFullYear()} {SITE_TITLE} by {AUTHOR}</p>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 4em 1em;
+		color: rgb(var(--gray));
+		text-align: center;
+		font-size: 0.85em;
+	}
+	.disclosure {
+		max-width: 640px;
+		margin: 0 auto 1em;
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 0.5em 1.2em;
+	}
+	a {
+		color: rgb(var(--gray-dark));
+	}
+</style>

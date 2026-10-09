@@ -1,0 +1,23 @@
+---
+import { AUTHOR, SITE_TITLE } from '../consts';
+import Layout from '../layouts/Page.astro';
+---
+
+<Layout title="About" description={`Who runs ${SITE_TITLE} and how the guides are made.`}>
+	<p>
+		{SITE_TITLE} is run by {AUTHOR}, who lives in Japan. The site answers the questions travellers
+		keep asking about Japanese baths — can I go in with tattoos, do I have to be naked, can I bring
+		my kids, how do I book a private bath — in plain English.
+	</p>
+	<h2>How we check facts</h2>
+	<ul>
+		<li>Rules, prices and opening hours come from each facility's own website or the official tourism site.</li>
+		<li>Every guide shows the date it was last checked. Rules change, so we link the official page for you to confirm.</li>
+		<li>When something can't be confirmed from an official source, we say so instead of guessing.</li>
+	</ul>
+	<h2>How the site makes money</h2>
+	<p>
+		Some links go to booking sites, and we may earn a commission if you book through them. That never
+		changes what a guide says. See the <a href="../disclosure/">affiliate disclosure</a>.
+	</p>
+</Layout>

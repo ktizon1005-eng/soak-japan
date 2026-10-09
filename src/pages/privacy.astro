@@ -1,0 +1,26 @@
+---
+import { SITE_TITLE } from '../consts';
+import Layout from '../layouts/Page.astro';
+---
+
+<Layout title="Privacy Policy" description={`What data ${SITE_TITLE} collects.`}>
+	<p><em>Last updated: October 9, 2026</em></p>
+	<h2>What we collect</h2>
+	<p>
+		This site does not ask you for personal information and has no accounts or comment forms. If you
+		email us, we use your address only to reply.
+	</p>
+	<h2>Cookies from booking sites</h2>
+	<p>
+		When you click an affiliate link, the booking site (for example Klook or Booking.com) may set a
+		cookie so it can tell that you came from {SITE_TITLE}. Those cookies are controlled by the booking
+		site and covered by its own privacy policy.
+	</p>
+	<h2>Hosting</h2>
+	<p>
+		The site is hosted on GitHub Pages. GitHub may log visitors' IP addresses for security, as described
+		in GitHub's privacy statement.
+	</p>
+	<h2>Changes</h2>
+	<p>If we add analytics or other tools, we will update this page first.</p>
+</Layout>

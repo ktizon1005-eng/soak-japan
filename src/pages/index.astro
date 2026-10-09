@@ -1,0 +1,44 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import PostList from '../components/PostList.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getPosts } from '../posts';
+
+const posts = await getPosts();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<h1>Japanese baths, minus the guesswork</h1>
+				<p>
+					Tattoos, nudity, kids, private baths, which place to pick — the questions first-time
+					visitors actually ask, answered from official sources and checked before every update.
+				</p>
+			</section>
+			<h2>Latest guides</h2>
+			<PostList posts={posts} />
+		</main>
+		<Footer />
+	</body>
+</html>
+<style>
+	.hero {
+		margin-bottom: 2.5em;
+	}
+	.hero h1 {
+		font-size: 2.2em;
+		text-wrap: balance;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+</style>

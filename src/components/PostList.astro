@@ -1,0 +1,64 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { url } from '../consts';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+	posts: CollectionEntry<'blog'>[];
+}
+const { posts } = Astro.props;
+---
+
+{posts.length === 0 ? (
+	<p class="empty">The first guides are being fact-checked. Check back soon.</p>
+) : (
+	<ul>
+		{posts.map((post) => (
+			<li>
+				<a href={url(`/blog/${post.id}/`)}>
+					<h3>{post.data.title}</h3>
+					<p>{post.data.description}</p>
+					<p class="date">
+						Updated <FormattedDate date={post.data.updatedDate ?? post.data.pubDate} />
+					</p>
+				</a>
+			</li>
+		))}
+	</ul>
+)}
+<style>
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 1.2em;
+	}
+	a {
+		display: block;
+		padding: 1em 1.2em;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 10px;
+		background: var(--paper);
+		text-decoration: none;
+		color: inherit;
+	}
+	a:hover h3 {
+		color: var(--accent);
+	}
+	h3 {
+		font-size: 1.25em;
+		margin: 0 0 0.3em;
+	}
+	p {
+		margin: 0;
+	}
+	.date {
+		margin-top: 0.4em;
+		font-size: 0.8em;
+		color: rgb(var(--gray));
+	}
+	.empty {
+		color: rgb(var(--gray));
+	}
+</style>
