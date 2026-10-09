@@ -5,6 +5,8 @@ pubDate: 'Oct 09 2026'
 draft: false
 ---
 
+**This guide is for you if** you have a tattoo, you're planning a trip to Japan, and you don't want to be turned away at the door of a bath. By the end you'll know which places let you in as you are, which need cover stickers, and which to skip.
+
 **Quick answer:** you can bathe in Japan with tattoos, but the rules depend on the place. Some baths let you in as you are, some let you in only if you cover the tattoo with their own stickers, and some still refuse anyone with ink. Below are the rules for well-known places, taken from each facility's official website on **October 9, 2026**.
 
 Rules change. Before you go, open the official link for the place you pick and check again.
